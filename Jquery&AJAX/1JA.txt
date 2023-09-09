@@ -1,0 +1,37 @@
+jQuery is a javascript library.
+jQuery greatly simplifies javascript Programming.
+jQuery is easy to learn.
+
+jQuery is a lightweight, "write less, do more", javascript library.
+The purpose of jQuery is to make it much easier to use javascript on your website.
+
+jQuery also simplifies a lot of the complicated thing from javascript, like AJAX calls and DOM manipulation.
+
+Features: 
+HTML/DOm manipulation
+CSS manipulation
+HTML event methods
+Effects and animations
+AJAX 
+utilities
+
+
+adding JQuery 
+2 methods are There
+
+1/Download JQuery library
+2/using CDN Link
+
+JQuery Syntax
+
+$(selector).action()
+$-sign to define/access jQuery
+
+$(this)-current element
+$("p")-tag p
+$(".test")-class test
+$("#kill")-id kill
+
+new file
+
+
