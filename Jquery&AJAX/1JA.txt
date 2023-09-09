@@ -32,6 +32,78 @@ $("p")-tag p
 $(".test")-class test
 $("#kill")-id kill
 
-new file
+The Document Ready event
 
+$(document).ready(function(){
+    jquery method....
+})
 
+shortcut method
+$(function(){
+    
+})
+
+$("*")-select all elements
+$("p.intro")-select the current HTML element
+$("p:first")-slects all <p> elements with class="intro"
+$("ul li:first-child")-selcts the first <li> element of every <ul>
+$(":button")-select all button element and inpur elements of type="button"
+$("tr:even")-selects all even <tr> elements
+$("tr:odd")-selects all odd <tr> elements
+
+jQuery is tailor-made to respond to events in an HTML page.
+
+DOM events:
+
+click
+dblclick
+mouseenter
+mouseleave
+keypress
+keydown
+keyup
+submit
+change
+focus
+blur
+load
+resize
+scroll
+unload
+
+we can pass multiple events on same element
+
+example
+
+$("p").on({
+
+   mouseenter:function(){
+
+   },
+   mouseleave:fuction(){
+    
+   }
+})
+
+Jquery Effects 
+hide
+Show
+Toggle
+fadeIn
+fadeOut
+fadeToggle
+fadeTo
+slideUp
+slideDown
+slideToggle
+
+JQuery animations
+
+Syntax: $(selector).animate({params},speed,callback);
+
+JQuery stop animations
+stop() method is used
+
+Syntax : $(selector).stop(stopAll,goToEnd);
+
+jQuery callback :
