@@ -1,0 +1,82 @@
+Intro to HTML Syntax
+
+1/*
+HTMl stands for hyper text markup language  for creating web pages
+describe the structure of web pages
+consist of a series of elements
+html element tell the browser how to display the content
+
+structure of web pages
+<html lang="en">
+        <head>
+            information of web pages
+        </head>
+    <body>
+        Main body
+    </body>
+</html>
+
+2/*
+This the three main element of the Web pages
+
+<HTML> element is the root element of an html page
+<TITLE> element specifies a title of the element
+<Head> tag contain the infromation of our web pages
+<BODY> element defines the body of the document's body
+
+3/*
+
+Heading , Paragraphs and Lists elements
+
+<H1> element define the heading text it contain The range of 1 to 6
+<p> element defines a paragraph text
+
+There is the two Type of list in the HTML Website
+
+1)orderList
+2)UnorderList
+
+Orderlist is type of list where each text having assending with No or Roman No
+Unorderlist is type of list where each text element having assnding with not Number but instead of the Picture
+
+Unorderlist start with <ul> element 
+Orderlist start with <ol> element
+
+4/*
+
+strong element
+
+<Strong> is HTML parsed tag and used to show the importance of the text
+Make the text Bold
+
+em tag
+
+<em> tag is used to emphasized text
+The content inside is typically displayed in italic
+
+5/*
+
+Doctype
+
+doctype is declaration is an instruction to the web browser about the 
+what version of HTML the page is written in
+doctype Declaration referes to as document type defination (DTD)
+<!DOCTYPE html>
+
+6/*
+
+lang attribute
+
+The lang attribute spicifies the language of the element's content.
+en="English" es="Spanish" and fr="French"
+
+7/*
+
+meta tag
+<meta> tag defines metadata about an HTML document. Metadata is data about data.
+<meta> tags always go inside the <head>  element and are typically used to specify 
+character set,page description ,keyword, author of the document and viewport settings.
+
+
+
+
