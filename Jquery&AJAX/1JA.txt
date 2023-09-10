@@ -107,3 +107,32 @@ stop() method is used
 Syntax : $(selector).stop(stopAll,goToEnd);
 
 jQuery callback :
+
+callback function is executed after the current effect is 100% finished.
+
+JQuery Chaining
+
+here using chaining, you can chain together action/Methods.
+chining allow to run multiple events on same statement.
+
+JQuery - Get content and attributes
+
+JQuery contain powerful methods for chaining and manipulating HTML elements and attributes.
+
+JQuery DOM manipulation
+
+One very important part of JQuery is Possibility to manipulate to DOM
+
+DOM defines a standard for accessing HTML and XML document
+
+DOM stands for Document Object Model
+
+
+GET Content - text(), html() and val()
+
+text() - sets or return the text content of selected elements
+html() - sets or rutruns the content of selected elements (including HTML markup)
+val() - sets or returns the value of form fields
+
+SET content - text(), html() and val()
+
