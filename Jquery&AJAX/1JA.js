@@ -78,20 +78,83 @@ $(document).ready(function () {
 
 
 
-$(".btn").click(function(){
-  alert("Text : " + $("p").text("vaghela  hardikbhai"));
-});
+// $(".btn").click(function(){
+//   alert("Text : " + $("p").text("vaghela  hardikbhai"));
+// });
 
-$(".btn1").click(function(){
-  alert("Text : " + $("p").html("<h1>jyotiben</h1>"));
-});
+// $(".btn1").click(function(){
+//   alert("Text : " + $("p").html("<h1>jyotiben</h1>"));
+// });
 
 // $(".btn2").click(function(){
 //   alert("Text : " + $("p").val());
 // });
 
-$(".btn2").click(function(){
-  alert("Text : " + $("p").attr("class","hardik"));
-});
+// $(".btn2").click(function(){
+//   alert("Text : " + $("p").attr("class","hardik"));
+// });
+
+// $(".btn").click(function(){
+//   $("p").append("some appended text.")
+// })
+// $(".btn1").click(function(){
+//   $("p").prepend("Some text is prepend before the content.")
+// })
+// $(".btn2").click(function(){
+//   $("p").after("some text is written after the line.")
+// })
+// $(".btn3").click(function(){
+//   $("p").before("some text is written before the line the line.")
+// })
+
+
+// $(".remove").click(function(){
+//   $(".box").remove();
+// })
+// $(".empty").click(function(){
+//   $(".box").empty();
+// })
+
+
+// $(".btn").click(function(){
+//   $("p").addClass("box1");
+// })
+
+// $(".btn1").click(function(){
+//   $("p").removeClass("box");
+// })
+
+// $(".btn2").click(function(){
+//   $("p").toggleClass("box");
+// })
+
+
+// $(".btn").click(function(){
+//    $("p").css({"font-size":"20px","color":"red"});
+// })
    
+// $(".widhei").click(function(){
+//   var txt="";
+//   txt+="the width of the box : "+$(".dimension").width() + "</br>";
+//   txt+="the height of the box : "+$(".dimension").height();
+//   $(".hw").html(txt);
+
+// })
+
+// $(".widhei").click(function(){
+//   var txt="";
+//   txt+="the width of the box : "+$(".dimension").innerWidth() + "</br>";
+//   txt+="the height of the box : "+$(".dimension").innerHeight();
+//   $(".hw").html(txt);
+
+// })
+
+$(".widhei").click(function(){
+  var txt="";
+  txt+="the width of the box : "+$(".dimension").outerWidth() + "</br>";
+  txt+="the height of the box : "+$(".dimension").outerHeight();
+  $(".hw").html(txt);
+
+})
+
   });

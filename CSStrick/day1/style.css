@@ -1,0 +1,38 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.main{
+    background-image: url("https://plus.unsplash.com/premium_photo-1675342786681-e33a19414cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVhdmVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60") ;
+    background-position: center;
+    overflow: hidden;
+    border: 1px solid white;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 800px;
+    position: relative;
+}
+
+.main .glass{
+
+   position: absolute;
+   left: 10%;
+   top: 10%;
+    height: 250px;
+    width: 600px;
+background-color: rgba(255,255,255,0.10);
+    backdrop-filter: blur(2px);
+}
+
+.glass .content{
+    color: rgb(234, 227, 227);
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 300;
+}

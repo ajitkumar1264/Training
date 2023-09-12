@@ -1,0 +1,27 @@
+html{
+    scroll-behavior: smooth;
+}
+.main{
+
+    font-size: 80px;
+    padding: 10px 20px;
+  
+}
+
+.bar{
+    height: 300px;
+}
+
+::-webkit-scrollbar{
+    width: 16px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b82b2b;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+

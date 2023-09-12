@@ -136,3 +136,120 @@ val() - sets or returns the value of form fields
 
 SET content - text(), html() and val()
 
+same as the Get Content
+
+JQuery - add elements
+
+* Add new HTML Content
+
+we will look at four jQuery method that are used to add new Content:
+
+1.append()-Inserts content at the end of the selected elements
+
+here the content is added after the element
+example is 
+
+the ajitkumar
+after clicking the button
+The ajitkumar vaghela
+
+2.prepend()-Inserts content at the beginning of the selected elements
+
+here the text or content is added before the elements
+example is
+
+ajitkumar vishnubhai
+after clicking on the button
+Vaghela ajitkumar vishnubhai
+
+3.after()-inserts contents after the selected elements
+
+
+here the text is added after the line 
+example is
+
+ajitkumar
+after clicking on the button
+
+ajitkumar
+hardikvaghela
+
+4.before()-inserts content before the selected elements
+
+here the text is added before the line 
+example is
+
+ajitkumar
+after clicking on the button 
+
+hardikvaghela
+ajitkumar
+
+
+append and prepend is inline element
+after and before is block level element
+
+
+both can take infinite nubmer of elements as parameters
+
+
+jquery - Remove elements
+
+To remove elements and content, ther are mainly two jQuery Methods:
+
+1.remove()-Removes the selected element (and its child elements)
+2.empty()-Removes the child elements from the selcted element
+
+
+here the remove function remove whole element
+where empty function remove the content or child of the selcted elements
+
+JQuery - Get and Set CSS Classes
+
+JQuery Manipulating CSS
+JQuery has several methods for CSS manipulation. We will look at the following methods:
+
+1.addClass()-Adds one or more classes to the selcted elements
+2.removeclass()-Removes one or more classes from the selected elements
+3.toggleClass()-Toggles between adding/removing classes from the selcted elements
+4.css() - Sets or return the style attributes
+
+JQuery -css() Methods
+
+the css() method sets or returns one or more style properties for the selected elements
+
+here in the css() method 
+css({"color":"red","font-size":"30px"})
+
+
+JQuery Dimension Methods:
+JQuery has several important methods for working with dimensions:
+
+1.width()
+2.height()
+3.innerWidth()
+4.innerHeight()
+here we add padding,border but not margin to the size of height and width
+5.outerWidth()
+6.outerHeight()
+here we add padding,margin or border to the size of height and width 
+
+the width() method sets or return the width of an element (excluding padding, border and margin)
+the height() method sets or returns the height of an element (excluding padding,border and margin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

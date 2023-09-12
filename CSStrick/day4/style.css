@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.main {
+  width: 200px;
+  height: 300px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main h1 {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+}
+
+.main h1::before {
+  content: "i";
+  background-color: black;
+}
+.main h1::after {
+  content: "5";
+  background-color: greenyellow;
+}
