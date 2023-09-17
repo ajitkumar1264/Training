@@ -77,6 +77,43 @@ meta tag
 <meta> tags always go inside the <head>  element and are typically used to specify 
 character set,page description ,keyword, author of the document and viewport settings.
 
+8/* 
+
+The Links absolute and Relatvie URLs
+
+1.Anchor tags and href
+
+the HTML anchor tag defines a hyperlink that links one page to another page. it can create a hyperlink to other web page as well as files
+,location,or any URL.
+the "href" attribute is the most important attribute of the HTML a tag , and which links to destination page or URL.
+
+href attribute is used to define the address of the file to be linked. in other words, it points out destination page.
+
+Syntax of HTML Anchor tag
+
+<a href=" ">Link text</a>
+
+unvisited link is displayed underlined and blue.
+a visited link is displayed underline and puple.
+an active link is underlined and red
+
+- Linking to other websites
+
+<a href="www.google.com">Link text</a>
+
+- Linking to pages within a website
+
+<a href="#name" > page Name</a>
+
+here one of the element in html consist of the id Name
+
+- Opening a link in a new browser window/tab
+
+here we have one more attribute in anchor tag name is target
+
+target attribute inside anchor tags tells the browser where linked documents should be loaded.
+
+
 
 
 

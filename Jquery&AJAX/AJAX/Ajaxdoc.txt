@@ -1,0 +1,18 @@
+
+<---------------------------AJAX------------------------------------------------>
+
+ajax is the art of exchanging data with a server, and updating parts of a web page-without reloading the whole page.
+
+what is AJAX?
+
+AJAX = Asynchronous Javascript and XML
+
+In short; AJAX is about loading data in background and display it on the webpage,without reloading whole page.
+
+examples of applications using AJAX : Gmail, Google Maps, Youtube, and Facebook tabs.
+
+JQuery provides several methods for AjAX functionality.
+
+With JQuery AJAX methods, you can request text,HTML,XML, or JSON from the remote server using HTTP GET and HTTP Post 0 and you can load the exteranl data directly
+into the selcted HTML elemnts of you web page!
+

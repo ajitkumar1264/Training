@@ -237,6 +237,101 @@ here we add padding,margin or border to the size of height and width
 the width() method sets or return the width of an element (excluding padding, border and margin)
 the height() method sets or returns the height of an element (excluding padding,border and margin)
 
+JQuery Traversing
+
+In JQuery traversing, which means "move through" are used to "find" HTML elements based on their relation to other elements.startwith one selection and move
+through that selection untill you reach the elements you desire.
+
+there are mainly three method are used 
+
+parent()
+parents()
+parentsUntill()
+
+The parent() method returns the direct parent element of the selected element.
+This method only traverse a single level up the DOM tree.
+
+The parents() method returns all ancestor elements of the selected element,all the way up the documents's root
+element(<html>)
+
+The parentsUntil() method returns all ancestor elements between two given arguments.
+
+JQuery Traversing - Descendats
+
+With JQuery you can traverse down the DOM tree to find descendats of an element.
+
+a descendant is child,Grandchild,Great-grandchild and so on.
+
+traversing Down the DOM tree
+
+Two useful JQuery method for traversing down the DOM tree are:
+
+children()
+find()
+
+The children() method returns all direct childeren of the selcted element.
+this method only traverse a single level down the DOM tree.
+
+you can also use an optional parameter to filter the search for children.
+
+example like
+
+$(div).childer("p.first");
+
+The find() method returns descendant elements of the selcted element, all the way down last descendant.
+
+find() method returns all element that are descendatns of selcted elements
+
+JQuery Traversing - Siblings
+
+with JQuery you can traverse sideways in DOm tree to find sibling of an element.
+
+sibling share the same parent.
+
+there are many useful JQuery method for traversing sideways in the DOM tree:
+
+siblings()
+next()
+nextAll()
+nextUntill()
+prev()
+prevAll()
+prevUntill()
+
+The siblings() method returns all sibling elements of the selected element.
+
+you can also use an optional parameter to filter the search for siblings.
+
+the next() method return the next sibling element of the selcted element.
+
+The nextAll() method returns all next sibling elements of the selcted element.
+
+The nexgtUntill() method returns all next sibling elements between two given argument.
+
+the same as prev(), prevAll() and prevUntill() method work just like the method above but with
+
+JQuery Traversing - Filtering
+
+The first() ,last() , eq(), filter() and not() methods
+
+The most basic filtering methods are first(),last() and eq(), which allow you to selct a specific element based on its position
+in a group of elements.
+
+other filtering methods, like filter() and not() allow you to select elements that match or do not match, a certain criteria.
+first() method return the first element of the specified elements.
+
+last() method return the last element of the specified elements.
+
+eq() method returns an element with a specific index number of the selected elements.
+The index start at 0, so the first element index is one
+
+The filter() method lets you specify a citeria. Elements that do not match the citeria are 
+removed from the selction, and those that match will be returned.
+
+JQuery not() method returns all elements that do not match the criteria
+
+The not method is opposite of filter().
+
 
 
 

@@ -149,12 +149,74 @@ $(document).ready(function () {
 
 // })
 
-$(".widhei").click(function(){
-  var txt="";
-  txt+="the width of the box : "+$(".dimension").outerWidth() + "</br>";
-  txt+="the height of the box : "+$(".dimension").outerHeight();
-  $(".hw").html(txt);
+// $(".widhei").click(function(){
+//   var txt="";
+//   txt+="the width of the box : "+$(".dimension").outerWidth() + "</br>";
+//   txt+="the height of the box : "+$(".dimension").outerHeight();
+//   $(".hw").html(txt);
+// })
 
+// $(".btn").click(function()
+// {
+//     $("span").parent().css({"color":"red","border":"2px solid red"})
+// })
+
+// $(".btn1").click(function()
+// {
+//     $("span").parents().css({"color":"red","border":"2px solid red"})
+// })
+
+// $(".btn2").click(function()
+// {
+//     $("span").parentsUntil("p").css({"color":"red","border":"2px solid red"})
+// })
+
+// $(".btn").click(function()
+// {
+//     $("p").childeren().css({"color":"red","border":"2px solid red"})
+// })
+
+// $(".btn").click(function()
+// {
+//     $("div").children("p.second").css({"color":"red"})
+//     alert("this is very long");
+// })
+
+// $(".btn1").click(function()
+// {
+//     $("p").find("span").css({"color":"red"})
+// })
+
+// $("btn").click(function()
+// {
+//     $("h1").siblings("h2").css({"color":"red"});
+// })
+
+// $(".btn").click(function()
+// {
+//     $("div").first().css({"color":"green"});
+// })
+// $(".btn").click(function()
+// {
+//     $("div").last().css({"color":"green"});
+// })
+// $(".btn").click(function()
+// {
+//     $("div").eq(1).css({"color":"red"});
+// })
+
+// $(".btn").click(function()
+// {
+//     $("div").eq(1).css({"color":"red"});
+// })
+
+// $(".btn").click(function()
+// {
+//     $("div").filter(".box").css({"color":"red"});
+// })
+$(".btn").click(function()
+{
+    $("div").not(".car").css({"color":"red"});
 })
 
   });
