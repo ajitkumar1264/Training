@@ -61,4 +61,108 @@ Syntax:
 
 $.get(URL,callback);
 
+URl page contain API value
+Callback function contain two parameter data and status 
+
+JQuery $.post() method request data from the server using an HTTP POST request.
+
+Syntax:
+
+$.post(URL,data,callback);
+
+The required URl  parameter specifies the URL you wish to Request.
+
+The optional data parameter spcifies some data to send along with the request.
+
+ The optional callback parameter is the name of a function to be executed if the request succeeds.
+
+
+ JQuery - The noConflict() method
+
+ what is you wish to use other framework on your pages
+
+as you already know;JQuery uses the $ sign as a shortcut for jQuery.
+There are many other popular Javascript frameworks like : Angular,Backbone,Ember knockout and more.
+
+What if other JavaScript frameworks also use the $sing as a shortcut?
+
+if two different frameworks are using the same shortcut, one of them might stop working.
+
+The JQuery team have already thought about this, and implemented the noConflict() method.
+
+
+The JQuery noConflict method
+
+The noconfilct method releases the hold on the $ shortcut identifier, so that other scripts can use it.
+
+noConfilct
+
+Ajax JQuery method:
+
+$.ajax()- performs an async AJAX request
+The ajax() method is used to perform an AJAX (asychronous HTTP) request.
+
+$.ajaxprefilter()-handle the custom ajax options or modify existing options before each request is end and before they are preocessed by $.ajax()
+
+$.ajaxSetup() - sets the default values for future AJAX requests
+
+$.ajaxTransport()-creates an object that handles the actual transmission of Ajax data.
+
+$.get()-loads data from a server using an AJAX HTTP GET request
+
+$.getScript() - Loads a javascript from a server using an AJAX HTTP GET Request
+
+$.param() - creates a serialized representation of an array or object 
+
+$.ajaxComplete() - method spedifies a function to be run when an ajax request is completed.
+
+$.ajaxError()-sepcifies a function to run when the ajax request completes with an error
+
+$.ajaxSend()-apecifies a function to run before the Ajax Request is sent
+
+$.ajaxStart()-specifies a function to run when the first ajax request begins
+
+$.ajaxStop()-specifies a function to run when all ajax requests have completed.
+
+$.ajaxSuccess() -specifies a function to run when an AJAx request compltes successfully
+
+$.load()- loads data from a server and puts the returned data into the selected element.
+
+$.serialize()-encodes a set of form elements as a string for submission.
+
+Ajax - the XMLHttpRequest object
+The keystone of AJAX is the XMLHttpRequest object.
+
+all mordern browsers support the XMLHttpRequest object.
+The XMLHttpRequest object can be used to exchange data with a server behind the scenes.This means that it is possible to update parts of a web
+page, without reloading the whole page.
+
+For Security reasons,mordern browsers do not allow access across domains.
+this means that both the web page and the XML file it tries to load, must be located on the same server.
+
+method:
+
+new XMLHttpRequest()-creates a new XMLHttpRequest object.
+abort() - cancels the current request.
+getAllResponseHeaders() - Returns header information
+getResponseHeader()-Return specific header information
+open(method,url,async,user,psw)-specifies the request
+send()-Sends the request to the server
+setRequestHeader() - adds a label/value pair to the header to be sent
+
+
+XMLHttpRequest object properties :
+
+onreadystatechange - defines a function tobe called when the readyState property changes
+readyState - Holds the status of the XMLHttpRequest
+0:request not initialized
+1:server connection established
+2.request received
+3.processing request
+4.request finished and response is readyState
+responseText - returns the response data as a string
+responseXML - Returns the response data as Xml data
+status : Returns the status-number of a request
+statusText - Returns the status-text
+
 

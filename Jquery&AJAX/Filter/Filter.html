@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter_Table</title>
+    <link rel="stylesheet" href="Filter.css">
+  </head>
+  <body>
+    <h2>Filterable Table</h2>
+    <p>
+      Type something in the input field to search the table for first names, lat
+      names or emails:
+    </p>
+    <input type="text" id="myInput" placeholder="Search.." />
+    <br /><br />
+
+    <table>
+      <thead>
+        <tr>
+          <th>FirstnName</th>
+          <th>LastName</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="myTable">
+        <tr>
+          <td>Ajitkumar</td>
+          <td>vaghela</td>
+          <td>vaghelaajit464@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Hareshkumar</td>
+          <td>Chauhan</td>
+          <td>Hareshchauhan@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Pradipkumar</td>
+          <td>Rabari</td>
+          <td>RabariPradip@gmail.com</td>
+        </tr>
+        <tr>
+          <td>sagar</td>
+          <td>chauhan</td>
+          <td>sagarchauhan12@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Note that we start the search in tbody, to prevent filtering the table
+      headers.
+    </p>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="Filter.js"></script>
+</html>
