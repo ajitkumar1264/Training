@@ -33,6 +33,32 @@
     >
       <br />Loading..
     </div>
+
+
+    <p id="demo">
+      Let Ajax change this text.
+    </p>
+    <button onclick="loadDoc()">loadDoc</button>
+
+    <script>
+      function loadDoc(){
+
+        var xhttp=new XMLHttpRequest();
+
+        xhttp.onreadystatechange=function(){
+          if(this.readyState==4 && this.status == 200)
+          {
+            document.getElementById("demo").innerHTML=this.responseText;
+          }
+        };
+
+        xhttp.open("GET","Ajaxdoc.txt",true);
+        xhttp.send();
+      }
+    </script>
+
+
+
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="Ajax.js"></script>

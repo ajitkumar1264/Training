@@ -1,0 +1,36 @@
+javaScript is used to create client-side dynamic pages.
+javascript is an object-based scripting language which is lightweight and cross-platform.
+javascript is not compiled language but it is translated language.The
+javascript translator is responsible for translating the javascript code for the web browser.
+introduced in 1995
+with the javascript user can build morden web application to interact directly without
+reloading the page every time.
+javascript follows the syntax and structure of the c programing language.
+javascript is weakly typed language.
+
+application of javascript:
+client-side validation
+dynamic drop-down menus.
+displaying date and time,
+display pop-up windows
+displaying clocks etc..
+
+javaScript example is easy to code. JavScript 3 places to put the JavaScript code:
+1) within body tag,
+2) within head tag
+3) external JavaScript file.
+
+The script tag specifies that we are using JavaScript.
+The text/javascript is the content type that provides information to the browser about the data.
+The document.write() function is used to display dynamic content through javaScript. we will learn about document object in detail later.
+
+places to put javaScript code
+
+1.Between the body tag of html
+2.Between the head tag of html
+3.in .js file(external javaScript)
+
+
+
+
+

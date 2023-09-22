@@ -166,3 +166,17 @@ status : Returns the status-number of a request
 statusText - Returns the status-text
 
 
+send a Request To a server
+
+xhttp.open("GET","ajaxdoc.txt",true);
+xhttp.send();
+
+open()-specifies the type of request Get or post and Location and async
+
+post Request Example :
+
+xhttp.open("POST", "demo_post2.asp", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("fname=Henry&lname=Ford");
+
+
