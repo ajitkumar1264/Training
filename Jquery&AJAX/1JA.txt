@@ -75,7 +75,7 @@ we can pass multiple events on same element
 
 example
 
-$("p").on({
+$("p").on(function(){
 
    mouseenter:function(){
 
@@ -276,7 +276,7 @@ you can also use an optional parameter to filter the search for children.
 
 example like
 
-$(div).childer("p.first");
+$(div).childern("p.first");
 
 The find() method returns descendant elements of the selcted element, all the way down last descendant.
 

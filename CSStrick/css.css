@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+.para{
+    color: greenyellow;
+}
+#first{
+    color:brown
+}
+h2,h3,h4{
+    background-color: aquamarine;
+    margin-bottom: 5px;
+}
+/* div p{
+    font-weight: bold;
+} */
+
+/* div > p {
+    font-style: italic;
+} */
+div + p {
+    font-style: italic;
+}
+
+/* p a[href]{
+    text-decoration: none;
+} */
+p a[href="ww"]{
+    text-decoration: none;
+}
+
+p a:link{
+    color:black
+}
+p a:visited{
+    color: red;
+}
+p a:hover{
+    color: yellow;
+}
+div p.second:hover{
+    background-color: aquamarine;
+
+}
+
+div p.second::first-letter{
+    font-size: 30px;
+}
+div p.third{
+    font-size: 50px;
+    /* text-align: center; */
+    /* text-align-last: center; */
+    /* direction: rtl; */
+    /* vertical-align:text-bottom; */
+    /* text-decoration-line:underline;
+    text-decoration-color:blue ;
+    text-decoration-style:dotted;
+    text-decoration-thickness:2px ; */
+    text-transform: capitalize;
+    text-indent: 20px;
+    /* letter-spacing: 5px; */
+    /* line-height: 10px; */
+    word-spacing: 10px;
+    white-space: inherit;
+    text-shadow: 5px 10px black;
+    color: white;
+}
+div p.third::after{
+    content: "CAR";
+
+}
+div p.third::before{
+    content: "BMW";
+
+}
+body{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px;
+    height: 90vh;
+    /* background-color: aquamarine;
+    background-image: url("wallpaperflare.com_wallpaper\ \(5\).jpg"); */
+    background-position: center;
+    /* background-origin: border-box; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    /* background: linear-gradient(to right ,black,red); */
+    /* background: radial-gradient(green ,black,red); */
+    background: conic-gradient(green ,black,red);
+    background: repeating-conic-gradient(green,black,red)
+   
+    /* background-clip: padding-box; */
+    
+}
+
+.lists{
+    padding: 20px;
+}
+
+div ol{
+    list-style-type: upper-alpha;
+    color: wheat;
+    font-size: 30px;
+    margin-bottom: 30px;
+
+}
+
+div ul{
+    list-style-type: circle;
+    color: wheat;
+    font-size: 30px;
+    margin-bottom: 30px;
+    list-style-position: outside;
+}
+
+table{
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+table tr td,th{
+    padding: 8px 5px;
+
+}
+
+.dis {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    position: relative;
+    left: 30%;
+    color: white;
+}
+
+div + img{
+
+    position: absolute;
+    left: 70%;
+    bottom: -200px;
+}
+
+.box{
+
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position:fixed;
+}

@@ -1,0 +1,721 @@
+CSS is the language we use to style an HTML document.
+CSS describes how HTML elements should be displayed.
+
+CSS is the language we use to style a web Page.
+
+What is CSS ? 
+
+CSS stands for Cascading style Sheets.
+CSS describes how HTML elements are to be displayed on Screen,paper, or in other media.
+CSS saves a lot of work, it can control the layout of multiple we pages all at once.
+External stylesheets are stored in css files.
+
+Benifit of CSS
+
+1) Faster page speed.
+2) Better User Exprience.
+3) Quicker Development Time.
+4) Easy formatting changes.
+5) compatibility Across Devices.
+
+- External Style Sheet using < link >
+
+when a browser reads a style sheet, it will formate the HTML document according to the information 
+in the style sheet.
+
+Three are three ways of inserting a style sheet:
+
+External CSS
+Internal CSS
+Inline CSS
+
+External CSS
+with an external style sheet, you can change the look of an entire webiste by changing just one file.
+
+Each HTMl page must include a reference to the external style sheet file inside the <link> element,inside the head section.
+
+example
+<head>
+<line rel="stylesheet" href="mystyle.css">
+</head>
+
+An external style sheet can be written in any text editor,and must be saved with a .css extension.
+
+the external .css file should not contain any HTML tags.
+
+Internal CSS
+an internal style sheet may be used if one single HTML page has a unique style.
+the internal style is defined inside the <style> element, inside the head section.
+
+Inline CSS
+
+An inline style may be used to apply a unique style for a single element.
+to use inline styles,add the style attribute to the relevant element. The style attribute can contain any CSS property.
+
+Cascading order
+all the styles in a page will cascade into a new virtual style sheet by the following rules,where number one has the highest priority:
+
+1. Inline styles - highest priority
+2. External and internal styles Sheets 
+3. Browser default
+
+
+CSS Comments
+
+CSS comments are not displayed in the browser, but the can help document you source code.
+
+comments are used to explain the code, and may help when you edit the source code at a late date.
+
+comments are ignored by the Browser.
+
+A CSS comment is placed inside the <style> element, and start with /* and ends with */;
+
+Id and Class : 
+
+Id
+
+The HTML id attribute is used to specify a unique id for an HTML element.
+
+you cannot have more that one element with the same id in an HTML document.
+
+class
+
+The HTML class attribute is use to specify a class for HTML element.
+
+Multiple HTML element can share the same class.
+
+
+
+CSS Selector : 
+
+CSs selectors are used to "find" the HTML elements you want to style.
+
+we can divide CSS selectors in five categories.
+
+simple selectors (select elements based on name,id and class)
+Combinator selectors (select elements based on a specific reloationship between them)
+psedo-class selectors (select elements based on a certain state)
+pseudo-elements selectors (select and style a part of an element)
+attribute selectors (select elements based on an attribute or attribute value)
+
+
+The CSS id selector
+
+The id selector uses the id attribute of an HTML element to select a specific element.
+
+The id of an element is unique within a page, so id selector is used to selct one unique element!.
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+The CSS class Selector 
+
+The class selector selects HTML element with a specific class attribute.
+To select element with a specific class, write a period(.) character, followed by the class name.
+
+The CSS element seletor 
+
+The element selector selects HTML elements based on the element name.
+
+The CSS universal selector
+
+The universal selector (*) selects all HTML elements on the page.
+
+The CSS grouping selector
+
+The grouping selector selects all the HTML elements with the same style definitions.
+
+Example : 
+
+h1,h2,p{
+    text-align : center;
+    color:red;
+}
+
+Descendant / Child Selectors
+
+Css combinations
+
+a combinator is something that explains the reloationship between the selectors.
+
+There are four different combinatots in CSS:
+
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector(-)
+
+Descendant selector
+the descendant selctor matches all elements that are descendants of a specified element.
+
+example :
+
+div p{
+    background-color:red;
+}
+
+child selctor (>)
+
+The child selector selects all elements that are the children of a specified element.
+
+select all p elements that are the childeren fo a div element :
+
+div >  p {
+
+    background-color:red;
+}
+
+Adjacent sibling selector (+)
+
+The adjacent sibling selector is use to select an element that is directly after another specific element.
+
+sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+example : select the first <p> element that are placed immediately after <div> elements :
+
+div + p {
+ 
+ background-color:Red;
+
+}
+
+General sibling selector ~
+
+The genearal sibling selector selects all elements that are next siblings of a specified element.
+
+div ~ p { 
+    background-color:Red;
+}
+
+
+CSS Attribute Selectors
+
+style HTML elements with specific attributes
+
+it is possible to style HTML elements that have specific attributes or attributes value.
+
+CSS [attribute] selector
+
+the [attribute] selector is used to select elements with a specified attribute.
+
+example :
+
+selects all <a> elements with a target attribute:
+
+a[target]{
+    background-color:red;
+}
+
+The [attribute = " value] selector is used to select element with a specifed attribute and value.
+
+example : selects all <a>  elements with a target="_blank" attribute.
+
+a[target="_blank"]{
+    background-color:red;
+}
+
+The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.
+
+[title~="flower"] {
+    border:5px solid red;
+}
+
+The [attribute|="value] selector is used to select elements with the specified attribute, whose value 
+can be exactly the specified value,or the specified value followed by ahyphen (-).
+
+example : the value has to be a whole word ,either alone,like class="top", or followed by hypen(-),like class="top-text"
+
+The [attribute^="top"] selector is used to select elements with specified attribute,whose value start with the specified value.
+
+example selects all elements with a class attribute value that starts with "top" :
+
+The [attribute$="value"] selector is used to select elements whose attribute value ends with a specifed value.
+
+example selects all elements with a class attribute value that ends with "test" :
+
+The [attribute*="value"] selector is used to select elements whose attribute value ccontains a specifed value.
+
+example selects all elements with a class attribute value that conatins "te".
+
+CSS Pseudo-classes
+
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+style an element when a user mouses over it.
+style visited and unvisited links differently
+style an element when it gets focus.
+
+Syntax of pseudo-classes : 
+
+selector:pseudo-class{
+    property:value;
+}
+
+a:link{
+    color:black;
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    color:green;
+}
+a:active{
+    color:blue;
+}
+
+pseudo-classes and HTML Classes 
+
+pseudo-classes can be combined with HTML classes:
+
+when you hover over the link in the example, it will change color:
+
+div:hover{
+    background:black;
+}
+
+CSS - The :first-child Pseudo-class
+
+The :first-child pseudo-class matches a specified element that is the first child of another element.
+
+The selector matches any <p> element that is the first child of any element.
+
+p:first-child{
+    color:blue;
+}
+
+CSS - The :lang Pseudo-class
+
+The :lang pseudo-class allows you to define special rules for different languages.
+
+ALL CSS Pseudo Classes
+
+a:active  -  select the active link
+input:checked - selects every checked <input> element.
+input:disabled - selects every disable <input> element.
+p:empty - selects every <p> element that has no children.
+input:enabled - selects every enabled <input> element.
+p:first-child - selects every <p> elements that is the first child of its parent.
+p:first-of-type - selects every <p> elements that is the first <p>element of its parent.
+input:focus - selects the <input> element that has focus
+a:hover - selects links on mouse over
+input:in-range  - selects <input> elements with a value within a specified range.
+input:invalid - selects <input> elements with an invalid value.
+p:lang(it) - selects every <p> element with a lang attribute value starting with "it".
+p:last-child - selects every <p> element that is the last <p> element of its parent.
+p:last-of-type - selects every <p> element that is the last<p> element of its parent.
+a:link - selects all unvisited links
+:not(p) - selects every element that is not a <p> element.
+p:nth:child(2) - selects every <p> element that is the second child of its parent.
+p:nth-last-child(2) - selects every <p> element that is the second child of its parent, counting from the last child.
+p:only-of-type - selects every <p> element that is the only <p> element of its parent.
+p:only-child - selects every <p> element that is the only child of its parent.
+input:optional - selects <input> elements with no "required" attribute.
+input:out-of-range - selects <input> elements with a value outside a specified range.
+input:read-only - selects <input> elements with a "readonly" attribute specified.
+input:read-write - selects <input> elements with no "readonly" attribute specified.
+:root - selects the document's root element.
+#news:target - selects the current active #news element (clicked on a url containing that anvchor name).
+input:valid - selects all <input> elements with a valid value.
+a:visited  - selects all visited links
+
+ALl CSS Pseudo elements
+
+A CSS psudo-element is used to style specified parts of an element.
+
+example: 
+
+style the first letter,or line , of an element.
+Insert content before, or after, the content of an element.
+
+Syntax 
+
+selector::pseudo-element{
+    property:value;
+}
+
+p::after - Insert content after every <p> element
+p::before - Insert content before every <p> element
+p::first-letter - selects the first letter of every <p> element.
+p::first-line - selects the first line of every <p> element. can only be applied to block-level elements.
+::marker - selects the markers of list items.
+p::selects the portion of an element that is selected by user.
+
+
+Background property
+
+The background property is a shorthand property for:
+
+background-color
+background-image
+background-position
+background-size
+background-repeat
+background-origin
+bakcground-clip
+background-attachement
+
+CSS Syntax :
+
+background:bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial/inherit;
+attachement initial|inherit;
+
+Background-attachement property
+background-image that will not scroll with the page.
+Default value is scroll
+scroll
+fixed
+local - the background image will scroll with the element's contents
+intial - sets this property to default value.
+inherit -Inherits this property from its parent element.
+
+background-attachement:fixed;
+
+background-blend-mode
+
+specify the blending mode of a background-image to be "lighten".
+The background-blend-mode property defines the blending mode of each background layer
+default value : normal
+normal
+multiply - sets the blending mode to multiply
+screen - sets the blending mode to screen
+overly - sets the blending mode to overlay
+darken - sets the blending mode to darken
+lighten - sets the blending mode to lighten
+color-dodge - sets the blending mode to color-dodge
+saturation - sets the blending mode to saturation
+color - sets the blending mode to color
+luminosity - sets the blending mode to luminosity
+
+CSS background-clip property
+
+specify how far the background should extend within an element:
+The background-clip property defines how far the background (color or image) should extend within an element.
+defalut value - border-box
+border-box - Background extends behind th border
+padding-box - The Background extends to the inside edge of border.
+content-box -  The background extends to the edge of the content box
+initial
+inherit
+
+CSS background-color property
+
+set the background color for a page:
+use a background color and a text color that makes the text easy to read.
+
+defalut value - transparent
+transparent
+color
+intial
+inherit
+
+rgb
+rgba
+hsl
+hsla
+
+CSS background-image property
+
+set a background-image for the <body> element:
+set two background images for the <body> element:   
+background-image property sets one or more background images for an element.
+by default, a background-image is placed at the top-left corner of an element,and repeated both vertically and horizontally.
+The background of an element is the total size of the element,including padding and border (but not the margin).
+
+defalut-none
+url() - The url to the image is specify
+conic-gradient() - sets a conic gradient as background image.
+linear-gradient() - sets a linear gradient as the background image.
+radial-gradient() - sets a radial gradient as the background image.
+repeating-conic-gradient() - repeats the conic gradient.
+repeating-linear-gradient() - repeats the linear gradient.
+reapeating-radial-gradient() - repeats the radial gradient.
+intial
+inherit
+
+CSS background-origin property
+
+let the background-image start from the upper left corner of the content:
+The background-origin property specifies the origin position( the background positioning area) of a background image.
+
+defalut value - padding-box
+border-box
+content-box
+initial
+inherit
+
+How to position a background-image:
+The background-position property sets the starting position of a background image.
+
+Default value 0% 0%
+left top
+left center
+left bottom
+right top
+right
+bottom
+center top
+center
+X%y% - The first value is the horizontal position and the second value is the vertical.The top left corner is 0% 0%.The fight bottom corner is 100% 100%.
+xpos ypos - The first value is the horizontal position and the second value is the verticle.
+intial - sets this property to its default value.
+inherit 
+
+CSS background-position-x property
+
+How to position a background-image on x-axis & background-image on y-axis:
+
+The background-position-x property sets the postion of background image on the x-axis.
+default value 0%
+left 
+right
+center
+x% - left side is 0% on x-axis, and right side is 100%
+xpos - Horizontal distance from left side.
+xpos offset - Two value syntax,only supported in firefox and safari.
+intial
+inherit
+
+CSS text
+
+CSS has a lot of properties for formatting text.
+
+text color
+the color property is used to set the color of the text.
+colorname - red
+HEX value - #ff0000
+RGB - rgb(255,0,0)
+
+CSS Text Alignment
+
+Text alignment and Text Direction
+
+text-align
+text-align-last
+direction
+unicode-bidi
+vertical-align
+
+text-align property is used to set the horizontal alignment of a text.
+a text can be left or right aligned,centered or justified.
+text-align-last property specifies how to align the last line of a text.
+
+The direction and unicode-bidi properties can be used to chnage the text direction of an element.
+
+vertical-align property sets the vertical alignment of an element.
+
+baseline
+text-top
+text-bottom
+sub
+super
+
+CSS Text Decoration
+
+text-decoration-line
+text-decoration-color
+text-decoration-style
+text-decoration-thickness
+text-decoration
+
+The text-decoration-line property is used to add a decoration line to text.
+overline
+line-through
+underline
+overline underline
+The text-decoration-color property is used to set the color of the decoration line.
+The text-decoration-style property is used to set the style of the decoration line.
+solid
+double
+dotted
+dashed
+wavy
+The text-decoration-thickness property is used to set thickness of the decoration line.
+text-decoration: underline red double 5px;
+
+Text Transformation
+
+The text-transformation property is used to specify uppercase and lowercase letters in a text.
+uppercase
+lowercase
+capitalize
+
+CSS Text spacing
+
+text-indent
+letter-spacing
+line-height
+word-spacing
+white-space
+
+The text-indent property is used to specify the indentaion (paragraph spacing) of the first line of a text:
+
+Letter Spacing 
+
+The letter-spacing property is used to specify the space between the characters in a text.
+
+Line height
+
+The line-height property is used to specify the space between lines:
+
+Word-spacing 
+
+The word-spacing property is used to specify the space between the word in text.
+
+White space 
+
+The white-space property specifies how white-space inside an element is handled.
+white-space:nowrap
+
+Text Shadow
+
+The text-shadow property adds shadow to text.
+you only specify the horizontal shadow(2px) and verticle shadow(2px).
+
+List 
+
+In HTML, ther are two main types of lists:
+
+unordered lists (<ul>) - the list items are marked with bullets
+ordered lists(<ol>) - the list items are marked with numbers or letters
+
+Different list item markers
+
+The list-style-type property specifies the type of list item marker.
+circle
+square
+upper-roman
+lower-alpha
+
+the list-style-image property specifies an image as the list item marker.
+
+list-style-image:url('squrple.gif')
+
+The list-style-position property specifies the position of the list-item markers
+outside
+inside
+
+CSS tables
+
+to specify table borders in CSS,use the border property.
+if you need a table that should span the entire screen,add width:100% to the <table> element.
+The border-collapse property sets whether the table borders should be collapsed into a single border:
+border-collapse: collapse;
+
+The width and height of a table are defined by the width and height properties.
+The text-align property sets the horizontal alignment(like left,right or center) of the content in <th> or <td>
+The vertical-align property sets the vertical alignment (like top,bottom,or middle) of the content in <th> or <td>
+
+the control the space between the border and the content in a table,use the padding property on <td> and <th> elements.
+
+border-bottom property to <th> and <td> for horizontal deivders.
+
+A responsive table will display a horizontal scroll bar if the screen is too small to display the full content.
+overflow-x:auto
+
+CSS Box model
+
+ALL HTML elements can be considered as boxes.
+In CSS, the tern "box model" is used when talking about design and layout.
+The CSS box model is essntially a box that wraps around every HTML element. It Consists of:margins,border,padding, and the actual content:
+
+Content - The content of the box, where text and images appear
+Padding - clears an area around the content.The padding is transparent.
+Border- a border that gose around the padding and content.
+Margin -  clears an area outside the border. The margin is transparent.
+
+In order to set the width and height of an element correctly,in all browsers, you need to know how the box model works.
+
+CSS float property
+
+The float property specifies whather an element should float the left ,right or not at all.
+Elements next to a floating element will flow around it.to avoid this use clear property or the clarfix hack.
+default none
+left -  the element floats to the left its container
+right -  the element floats to the right its container
+initial 
+inherit
+
+CSS flex box
+
+before the flexbox layout module,there were four layout modes:
+
+Block - for sections in a webpage.
+inline - for text
+table - for two-dimensional table data
+positioned -for explicit positioning of an element.
+the flex container becomes flexible by setting the display property to flex
+flex container properties are:
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+The flex-direction property defines in which direction the container wants to statck the flex items.
+row
+row-reverse
+column
+column-reverse
+
+The flex-wrap property specifies wheather the flex items should wrap or not.
+wrap
+nowrap
+
+The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order.
+wrap
+wrap-reverse
+
+The flex-flow property is a shorthand property for setting both thd flex-direction and flex-wrap
+flex-flow: row wrap;
+
+The justify-content property is used to align the flex items:
+center
+flex-start
+flex-end
+space-around
+spece-between
+
+The align-items property is used to align the flex items
+center
+flex-start
+flex-end
+streatch
+baseline
+
+The align-content property is used to align the flex lines.
+space-between value displays the flex lines with equal space between them.
+space-around
+stretch - value stretches the flex lines to take up the remaining space.
+flex-start
+flex-end
+
+
+the order property specifies the order of the flex items.
+style  order:3
+The flex-grow property specifies hwo much a flex item will grow relative to the rest of the flex items.
+flex-grow:1
+The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items.
+flex-shrink:0
+The flex-basis property specifies the initial length of a flex item.
+The align-self property specifies the alignment for the selected item inside the flexible container.
+align-selt:center;
+
+CSS Position property
+
+The position property specifies the type of position method used for an element
+(static,relative,absolute,fixed,sticky)
+default static - Default value.Elements render in order,as they appear in the document flow.
+absolute - The element is positioned relative to its positioned ancestor element.
+fixed -  The element is positioned relative to thee browser window.
+relative - the element is positioned relative to its normal position.
+sticky -  the elementis positioned based on the user's scroll positioned.
+initial
+inherit
+
+
+
+
+

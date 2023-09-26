@@ -74,17 +74,16 @@ The required URl  parameter specifies the URL you wish to Request.
 
 The optional data parameter spcifies some data to send along with the request.
 
- The optional callback parameter is the name of a function to be executed if the request succeeds.
+The optional callback parameter is the name of a function to be executed if the request succeeds.
 
+JQuery - The noConflict() method
 
- JQuery - The noConflict() method
-
- what is you wish to use other framework on your pages
+what is you wish to use other framework on your pages
 
 as you already know;JQuery uses the $ sign as a shortcut for jQuery.
 There are many other popular Javascript frameworks like : Angular,Backbone,Ember knockout and more.
 
-What if other JavaScript frameworks also use the $sing as a shortcut?
+What if other JavaScript frameworks also use the $sign as a shortcut?
 
 if two different frameworks are using the same shortcut, one of them might stop working.
 

@@ -23,22 +23,23 @@ console.log("working");
 //     //     })
 //     // })
 
-//     // $(".btn").click(function()
-//     // {
-//     //     $.get("https://randomuser.me/api/",function(data,status)
-//     //     {
-//     //         if(status=="success")
-//     //         {
-
-//     //             console.log(data,status);
-//     //         }
-//     //         if(status=="error")
-//     //         {
-//     //             console.log('error',error.message)
-//     //         }
-
-//     //     })
-//     // })
+    $(".btn").click(function()
+    {
+        // $(".pclass").load("https://randomuser.me/api/",function(data,status)
+        
+        $.get("https://randomuser.me/api/",function(data,status)
+        {
+            if(status=="success")
+            {
+                console.log(data,status);
+                $(".pclass").html(data);
+            }
+            if(status=="error")
+            {
+                console.log('error',error.message)
+            }
+        })
+    })
 
 //     $(".btn").click(function()
 //     {

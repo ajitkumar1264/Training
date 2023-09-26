@@ -229,5 +229,67 @@ THE HTML form element
 <option>
 <optgroup>
 
+HTML input type
+
+button - define clickble button
+checkbox - checkbox select more than one
+color - color picker
+date - date picker
+datetime-local - date and time picker
+email - email 
+file - file select field and a "Browse" button
+hidden - hidden input field
+image - image picker
+month - allows to user to select a month and year.
+number - defines a numeric input field.
+password -define password
+radio -define radio button select only one
+range -  entring number range with min and max values.
+reset -define reset button
+searchv - used for search field
+submit - submiting the form data
+tel - input field that should contain a telephone number.
+text - single-line text input
+time - allows the user to selct a time.
+URL - input field that should contain a URL
+week - user to select a week and year.
+
+
+input Restrictions
+
+checked
+disabled - specifies that input field should be disabled.
+max and min - attribute specify the minimum and maximum value for an input field.
+maxlength - specifies the maximum number of character allowed in an input field.
+pattern - attribute specifies a regular expression that the input field's value is checked against, when the form is submitted. when the input types : text,date,search,url,tel,email and password.
+readonly - specifies that an input field is read-only.
+required - specifies that an input field must be filled out before sumbitting the form.
+size - attribute specifies the visible width, in characters, of an input field. the default value for size is 20.
+step - attribute specifies the legal number intervals for an input field.
+value - specifies an intial value
+multiple - specifies that the user allowed to enter more than one value in an input field.
+placeholder - specifies a short hint that describes the exptected value of an input field.
+autofocus - specifies that an input field should automatically get focus when the page loads.
+height and width - attribute specify the height and width of an input type image element.
+list - attribute refers to a datalist element that contains pre-defined options for an input element.
+autocomplete - specifies wheather a form or an input field should have autocomplete on or off.
+
+
+form attribute : 
+
+form attribute specifies the form the input element belongs to.
+
+formaction - attribute specifies the URL of the file that will process the input
+formenctype - specifies how the form-data should be encoded when submitted.
+formmethod - attribute defines the HTTP method for sending form-data to the action URL.
+formtarget - attribute specifies a name or keyword that indicates where to display the response that is received after submitting the form.
+formnovalidate - attribute specifies that an <input>  element should not be validated when submitted.
+novalidate - attribute is a not validate when form is submitted.
+
+ 
+
+
+
+
 
 
