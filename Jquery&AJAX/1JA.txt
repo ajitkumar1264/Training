@@ -45,9 +45,9 @@ $(function(){
 
 $("*")-select all elements
 $("p.intro")-select the current HTML element
-$("p:first")-slects all <p> elements with class="intro"
-$("ul li:first-child")-selcts the first <li> element of every <ul>
-$(":button")-select all button element and inpur elements of type="button"
+$("p:first")-selects all <p> elements with class="intro"
+$("ul li:first-child")-selects the first <li> element of every <ul>
+$(":button")-select all button element and input elements of type="button"
 $("tr:even")-selects all even <tr> elements
 $("tr:odd")-selects all odd <tr> elements
 
